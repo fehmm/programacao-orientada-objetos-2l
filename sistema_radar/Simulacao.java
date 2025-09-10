@@ -1,37 +1,22 @@
+package sistema_radar;
 
 public class Simulacao {
     public static void main(String[] args) {
-        Carro opala = new Carro();
-        opala.velocidade = 0;
-        opala.placa = "ACLR300";
-        opala.modelo = "Comodoro";
-        opala.ano = 76;
+        Carro opala = new Carro("ACLR300", 0, 76, "Comodoro");
 
-        Radar radar = new Radar();
-        radar.modelo = "pardal";
-        radar.limiteVelocidade = 60;
-        radar.localizacao = "Pistão Sul";
+        Radar radar = new Radar("Pistão Sul", 60);
 
-        opala.acelerar(); // 5
+        radar.avaliarVelocidade(opala);
+
         opala.acelerar(); // 10
-        opala.acelerar(); // 15
-        opala.acelerar(); 
         opala.acelerar();
         opala.acelerar();
-        opala.acelerar(); 
         opala.acelerar();
         opala.acelerar();
-        opala.acelerar(); 
         opala.acelerar();
-        opala.acelerar(); // 60
+        opala.acelerar(); // 70
 
+        opala.setVelocidade(-60);
         radar.avaliarVelocidade(opala);
-
-        opala.acelerar(); // 65
-        radar.avaliarVelocidade(opala);
-
-        opala.frear(); // 60
-        radar.avaliarVelocidade(opala);
-
     }
 }

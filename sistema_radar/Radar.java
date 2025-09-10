@@ -9,8 +9,20 @@ public class Radar {
         this.localizacao = localizacao;
         this.limiteVelocidade = limiteVelocidade;
     }
+    
+    public String getLocalizacao(){
+        return this.localizacao;
+    }
 
-    public Radar(Integer limiteVelocidade){
+    public void setLocalizacao(String localizacao){
+        this.localizacao = localizacao;
+    }
+
+    public Integer getLimiteVelocidade(){
+        return this.limiteVelocidade;
+    }
+
+    public void setLimiteVelocidade(Integer limiteVelocidade){
         this.limiteVelocidade = limiteVelocidade;
     }
 
