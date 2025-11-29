@@ -2,7 +2,7 @@ package sistema_radar;
 
 public class Carro {
    private String placa;
-   private Integer velocidade;
+   private Integer velocidade; //mesma coisa que int, porem mais versátil, aceita null
    private Integer ano;
    private String modelo;
 

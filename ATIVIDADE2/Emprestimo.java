@@ -1,7 +1,7 @@
-package atividade2;
+package ATIVIDADE2;
 
 public class Emprestimo {
-    private String pessoa; 
+    private Pessoa pessoa; 
     private Material material;
     private String dataEmprestimo;
     private String dataDevolucao;
